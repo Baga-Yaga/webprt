@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="css/xml.css" type="text/css"?>
+<subjects>
+    <title>Welcome to Include Help</title>
+    
+    <subject>
+        <Name>Name -: Compiler design</Name>
+        <Teacher>Teacher -: Ms.khopkar</Teacher>
+        <Credits>Credits -: 3.0</Credits>
+    </subject>
+    <subject>
+        <Name>Name -: Sotware Engineering</Name>
+        <Teacher>Teacher -: Mr.Sanjay</Teacher>
+        <Credits>Credits -: 3.0</Credits>
+        
+    </subject>
+    <subject>
+        <Name>Name -: DBMS</Name>
+        <Teacher>Teacher -: Mr.Kore</Teacher>
+        <Credits>Credits -: 3.0</Credits>
+       
+    </subject>
+    <subject>
+        <Name>Name -: Data Science</Name>
+        <Teacher>Teacher -: Mr.Unknowm</Teacher>
+        <Credits>Credits -: 3.0</Credits>
+        
+    </subject>
+    <subject>
+        <Name>Name -: Operating System</Name>
+        <Teacher>Teacher -: Ms.kokate</Teacher>
+        <Credits>Credits -: 3.0</Credits>
+        
+    </subject>
+</subjects>

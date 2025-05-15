@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Registration Form</title>
+  <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Event Registration Form</h1>
+
+    <section>
+      <h2>About This Event</h2>
+      <table>
+        <tr><th>Event Name</th><td>Digital Marketing Masterclass</td></tr>
+        <tr><th>Date</th><td>October 15, 2028</td></tr>
+        <tr><th>Time</th><td>2:00 PM - 4:00 PM</td></tr>
+        <tr><th>Speaker</th><td>Sarah Johnson (Digital Marketing Expert)</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Participant Information</h2>
+      <div class="row">
+        <div class="form-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname">
+        </div>
+        <div class="form-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group">
+          <label>Gender</label>
+          <div class="radio-group">
+            <label><input type="radio" name="gender"> Male</label>
+            <label><input type="radio" name="gender"> Female</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="text" id="phone">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Where did you hear about this virtual event?</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox"> Facebook</label>
+          <label><input type="checkbox"> Youtube</label>
+          <label><input type="checkbox"> Instagram</label>
+          <label><input type="checkbox"> Twitter</label>
+          <label><input type="checkbox"> Other:</label>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Payment Information</h2>
+      <div class="row">
+        <div class="form-group">
+          <label for="tickets">Number of Tickets</label>
+          <input type="number" id="tickets">
+        </div>
+        <div class="form-group">
+          <label>Payment Method</label>
+          <div class="checkbox-group">
+            <label><input type="radio" name="payment"> Credit Card</label>
+            <label><input type="radio" name="payment"> Debit Card</label>
+            <label><input type="radio" name="payment"> Cash</label>
+            <label><input type="radio" name="payment"> Check</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <p class="disclaimer">
+          I understand that participation in this event may involve some degree of risk. I release WebinarPros LLC from any liability for injury, loss, or damage to personal property.
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="form-group">
+          <label><input type="radio" name="agree"> Yes, I understand.</label>
+        </div>
+        <div class="form-group">
+          <label for="signature">Signature</label>
+          <input type="text" id="signature">
+        </div>
+        <div class="form-group">
+          <label for="signed-date">Date Signed</label>
+          <input type="date" id="signed-date">
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
