@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="css/5_xml.xsl" type="text/xsl"?>
+<Students>
+    <stud>
+        <name id="amar">Amar</name>
+        <class>TY C</class>
+        <cgpa>8.0</cgpa>
+    </stud>
+
+    <stud>
+        <name>Radhey</name>
+        <class>TY C</class>
+        <cgpa>8.6</cgpa>
+    </stud>
+
+    <stud>
+        <name>Om Raut</name>
+        <class>TY C</class>
+        <cgpa>8.3</cgpa>
+    </stud>
+
+    <stud>
+        <name>Atharv</name>
+        <class>TY C</class>
+        <cgpa>7.8</cgpa>
+    </stud>
+
+    <stud>
+        <name>Om Bhanuse</name>
+        <class>TY C</class>
+        <cgpa>7.8</cgpa>
+    </stud>
+
+    <stud>
+        <name>Sami Bhadgaonkar</name>
+        <class>TY C</class>
+        <cgpa>8.3</cgpa>
+    </stud>
+
+    <stud>
+        <name>Yash Ainapure</name>
+        <class>TY C</class>
+        <cgpa>7.7</cgpa>
+    </stud>
+
+</Students>

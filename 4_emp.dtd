@@ -1,0 +1,4 @@
+<!ELEMENT Employees (emp+)>
+<!ELEMENT emp (name,salary)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT salary (#PCDATA)>

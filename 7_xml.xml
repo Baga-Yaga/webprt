@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="css/7_xml.xsl" type="text/xsl"?>
+<!DOCTYPE students [
+    <!ELEMENT students (student+)>
+    <!ELEMENT student (id,name,age,major,gpa)>
+    <!ELEMENT id (#PCDATA)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT age (#PCDATA)>
+    <!ELEMENT major (#PCDATA)>
+    <!ELEMENT gpa (#PCDATA)>
+]>
+<students>
+    <student>
+        <id>1</id>
+        <name>John Doe</name>
+        <age>20</age>
+        <major>Computer Science</major>
+        <gpa>3.7</gpa>
+    </student>
+    <student>
+        <id>2</id>
+        <name>Jane Smith</name>
+        <age>21</age>
+        <major>Mathematics</major>
+        <gpa>3.9</gpa>
+    </student>
+    <student>
+        <id>3</id>
+        <name>Michael Brown</name>
+        <age>22</age>
+        <major>Physics</major>
+        <gpa>3.5</gpa>
+    </student>
+    <student>
+        <id>4</id>
+        <name>Emily White</name>
+        <age>19</age>
+        <major>Biology</major>
+        <gpa>3.8</gpa>
+    </student>
+    <student>
+        <id>5</id>
+        <name>David Lee</name>
+        <age>20</age>
+        <major>Chemistry</major>
+        <gpa>3.6</gpa>
+    </student>
+</students>
