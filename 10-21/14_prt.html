@@ -1,0 +1,74 @@
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+    <form onsubmit="validateForm(event)">
+	<label>Name :</label>
+	<input id="name" placeholder="Enter ur name"></input>
+	<label>Age :</label>
+	<input id="age" placeholder="Enter ur age"></input><br><br>
+	<button type="submit">Submit</button>	    
+    </form>
+    
+    <script>
+
+	function validateForm(event){
+	    event.preventDefault();
+	    try{
+	        let name = document.getElementById('name').value;
+	        let age = document.getElementById('age').value;
+		Number(age);
+	
+	        if(name ===""){
+            	    throw new Error(" Name cannot be empty");
+	        }
+		if (age === ""){
+		    throw new Error(" Age cannot be empty");
+		}    
+		if (isNaN(age)){
+		    throw new Error(" Age cannot be string");
+		}
+		if (age < 0){
+		    throw new Error(" Age cannot be less than 0");
+		}
+		console.log("Form submitted successfully");
+		console.log("Name :" + name);
+		console.log("Age :" + age);
+	    }
+	    catch(err){
+	    	console.log("Error" + err.message);
+     	    }
+	}
+
+    </script>
+
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exception Handling Example</title>
+</head>
+<body>
+
+    <h2>JavaScript Exception Handling</h2>
+    <button onclick="handleError()">Click to Trigger Exception</button>
+
+    <script>
+        function handleError() {
+            try {
+		let result = x +5;
+                console.log("Result: " + result);
+            } catch (err) {          
+                console.log("An error occurred: " + err.message);
+            } finally {
+		console.log("Execution completed.");
+            }
+        }
+    </script>
+
+</body>
+</html>

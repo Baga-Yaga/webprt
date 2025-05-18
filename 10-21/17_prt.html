@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Click Event Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        #output {
+            margin-top: 20px;
+            font-size: 20px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Click Event Demo</h2>
+
+    <button onclick="handleClick()">Click Me</button>
+
+    <p id="output">You haven't clicked the button yet.</p>
+
+    <script>
+        let clickCount = 0;
+
+        function handleClick() {
+            clickCount++;
+
+            let message = "You clicked the button " + clickCount;
+
+            // Change message after multiple clicks
+            if (clickCount === 5) {
+                message = "Wow! You've clicked 5 times!";
+            } else if (clickCount === 10) {
+                message = "That's 10 clicks! You're really into this.";
+            } else if (clickCount > 15) {
+                message = "Okay, that's enough clicking! 😄";
+            }
+
+            document.getElementById("output").innerHTML = message;
+        }
+    </script>
+
+</body>
+</html>

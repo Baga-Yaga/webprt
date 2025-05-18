@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Practical 13 </title>
+</head>
+
+<body>
+    
+    <h1>Increase Decrease Font Size</h1>	
+    <p id="demo">hello</p>
+    
+    <button onclick="IncreaseFont()">Increase</button><br><br>
+    <button onclick="DecreaseFont()">Decrease</button>
+     
+    <script>
+	let fontsize = 16;
+	
+	function IncreaseFont(){
+	    fontsize += 2;
+	    document.getElementById('demo').style.fontSize = fontsize + 'px';
+	}
+
+	function DecreaseFont(){
+	    fontsize -= 2;
+	    document.getElementById('demo').style.fontSize = fontsize + 'px';
+	}
+	
+    </script>
+    	
+</body>
+</html>

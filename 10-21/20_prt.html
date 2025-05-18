@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+    
+    <form onsubmit="return validateForm()">
+	<label>Name :</label>
+	<input type ="text" id="name" placeholder="enter ur name here"/><br><br>
+	<label>Email :</label>
+	<input type="email" id="email" placeholder="enter ur email here"/><br><br>
+	<label>Age :</label>
+	<input type="number" id="age" placeholder="enter ur age here"/><br><br>
+	<button type="submit">Sumbit</button><br><br>
+	<p id="error"></p>
+    </form>
+	
+    <script>
+
+	function validateForm(){
+	    let name = document.getElementById('name').value.trim();
+	let eamil = document.getElementById('email').value.trim();
+	let age = document.getElementById('age').value.trim();
+	let errMssg ="";
+
+	if(name === ""){
+	    errMssg ="NAme field cannot be Empty";	
+	}
+	else if(age === ""){
+            errMssg = "Age cannot be Null";
+	}	
+	else if(email ===""){
+	    errMssg ="email cannot be Null";
+	}
+	else if (!email.includes("@") || !email.includes(".")){
+	    errMssg ="Invalid Email";
+	}
+
+	if(errMssg){
+	    document.getElementById('error').innerHTML = errMssg;
+	    console.log(errMssg);
+	    return false;
+	}
+	
+	alert("Form Sumbitted Successfully!");
+	return true;
+
+	}
+	
+    </script>
+
+</body>
+
+</html>

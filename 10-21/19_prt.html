@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Window Event Example</title>
+    <style>
+        #output {
+            margin-top: 20px;
+            font-weight: bold;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Window Events Demo</h2>
+
+    <p id="output">Waiting for window events...</p>
+
+    <script>
+        window.onload = function(){
+	    document.getElementById('output').innerHTML = "Page Loaded Successfuly";
+	}
+
+	window.onresize = function(){
+	    document.getElementById('output').innerHTML = "Window resized to :" + window.innerWidth + " x " + window.innerHeight ;
+	}
+    </script>
+
+</body>
+</html>

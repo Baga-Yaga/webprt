@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../css/9_xml.xsl"?>
+<library>
+    <book>
+        <title>JavaScript Basics</title>
+        <author>John Doe</author>
+    </book>
+    <book>
+        <title>Learn Java</title>
+        <author>Jane Smith</author>
+    </book>
+    <book>
+        <title>Python for Beginners</title>
+        <author>Alice Johnson</author>
+    </book>
+</library>

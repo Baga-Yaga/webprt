@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../css/8_xml.xsl"?>
+<library>
+    <book lang="en">
+        <title>JavaScript Basics</title>
+        <details>
+            <price>299 </price>
+            <address>Kolhapur</address>
+        </details>
+    </book>
+    <book lang="fr">
+        <title>Apprendre JavaScript</title>
+        <details>
+            <price>349 </price>
+            <address>Sangli</address>
+        </details>
+    </book>
+</library>

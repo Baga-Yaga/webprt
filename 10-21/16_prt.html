@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mouse Event Example</title>
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 200px;
+            font-weight: bold;
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Mouse Event Demo</h2>
+    <div id="box" 
+         onmouseover="mouseOver()" 
+         onmouseout="mouseOut()" 
+         onclick="mouseClick()">
+        Hover or Click Me
+    </div>
+
+    <p id="output"></p>
+
+    <script>
+        function mouseOver() {
+            document.getElementById("output").innerHTML = "Mouse is over the box!";
+        }
+
+        function mouseOut() {
+            document.getElementById("output").innerHTML = "Mouse left the box.";
+        }
+
+        function mouseClick() {
+            document.getElementById("output").innerHTML = "Box clicked!";
+        }
+    </script>
+
+</body>
+</html>

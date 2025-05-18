@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Focus Event Example</title>
+    <style>
+        input {
+            padding: 8px;
+            font-size: 16px;
+        }
+        #output {
+            margin-top: 10px;
+            font-weight: bold;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Focus Event Demo</h2>
+
+    <label for="name">Enter your name:</label><br>
+    <input type="text" id="name" onfocus="showMessage()" onblur="clearMessage()" placeholder="Click here to focus" />
+
+    <p id="output"></p>
+
+    <script>
+        function showMessage() {
+            document.getElementById("output").innerHTML = "Input field is focused!";
+        }
+
+        function clearMessage() {
+            document.getElementById("output").innerHTML = "";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Key Event Example</title>
+</head>
+<body>
+
+    <h2>Press Any Key Inside the Textbox</h2>
+    <input id="input" placeholder="Enter something.." onkeydown="showKey(event)"/>
+
+    <p id="output"></p>
+
+    <script>
+
+	function showKey(event){
+	    let keyPressed = event.key;
+	    document.getElementById('output').innerHTML = "You Pressed : " + keyPressed;
+	}
+	
+    </script>
+    
+</body>
+</html>
