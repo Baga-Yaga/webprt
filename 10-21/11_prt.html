@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prt_11</title>
+</head>
+<body>
+    <h1>Prt 11 matrix in JS</h1>
+    <pre id="demo">Watch me!!</pre>
+    
+    <script>
+	let matrix1 =[
+    	[2,5],
+	    [6,4]
+	];
+	
+	let matrix2=[
+	    [2,7],
+	    [7,8]
+	];
+    
+	let result=[];
+
+	for(let i = 0; i < matrix1.length ;i++){
+	    result[i] = [];
+	    for(let j = 0; j < matrix1[i].length; j++){
+	    	result[i][j] = matrix1[i][j] + matrix2[i][j];
+	    }
+	}
+	
+	let output ="";
+	output += "Matrix1 = " + JSON.stringify(matrix1) + "\n";
+	output += "Matrix2 = " + JSON.stringify(matrix2) + "\n";
+	output += "Sum = " + JSON.stringify(result);
+
+	document.getElementById('demo').innerHTML = output;
+
+    </script>
+
+</body>
+</html>
+
