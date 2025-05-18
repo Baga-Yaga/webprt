@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Object Example</title>
+</head>
+<body>
+  <h1>Person Info</h1>
+  <p id="firstName"></p>
+  <p id="age"></p>
+  <p id="fullName"></p>
+  <p id="greeting"></p>
+
+  <script>
+    const person = {
+      firstName: "John",
+      lastName: "Doe",
+      age: 30,
+      isEmployed: true,
+      fullName: function () {
+        return this.firstName + " " + this.lastName;
+      },
+      greet: function () {
+        return "Hello, my name is " + this.fullName();
+      }
+    };
+
+    document.getElementById("firstName").innerHTML = "First Name: " + person.firstName;
+    document.getElementById("age").innerHTML = "Age: " + person.age;
+    document.getElementById("fullName").innerHTML = "Full Name: " + person.fullName();
+    document.getElementById("greeting").innerHTML = person.greet();
+
+    console.log("First Name:", person.firstName);
+    console.log("Age:", person.age);
+    console.log("Full Name:", person.fullName());
+    console.log(person.greet());
+  </script>
+</body>
+</html>
