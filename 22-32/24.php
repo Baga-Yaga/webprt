@@ -16,8 +16,6 @@ class Student{
 		echo "Class : " .$this->class ."<br>" ;
 		echo "CGPA : " .$this->cgpa ."<br>" ;
 	}
-
-
 } 
 
 $std1 = new Student("Amar", "TY C", 8);

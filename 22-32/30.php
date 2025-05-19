@@ -5,7 +5,17 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
 
 	setcookie("username",$username,time()+3600);
 	setcookie("email",$email,time()+3600);
+	header("Location: ".$_SERVER['PHP_SELF']); // Refresh to show updated cookies
+    exit();
+
 }
+
+if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['delete_cookie'])) {
+    setcookie("username", "", time() - 3600);
+    setcookie("email", "", time() - 3600);
+    header("Location: ".$_SERVER['PHP_SELF']); // Refresh to clear cookies
+    exit();
+}	
 
 ?>
 
@@ -18,6 +28,10 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
 	<label>Enter Email :</label>
 	<input name="email" type="email" /><br><br>
 	<input type="submit" />
+</form>
+
+<form method="POST" style="margin-top: 20px;">
+    <input type="submit" name="delete_cookie" value="Delete Cookies" />
 </form>
 
 <?php

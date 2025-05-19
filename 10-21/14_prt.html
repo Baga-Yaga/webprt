@@ -19,9 +19,9 @@
 	        let age = document.getElementById('age').value;
 		Number(age);
 	
-	        if(name ===""){
-            	    throw new Error(" Name cannot be empty");
-	        }
+	    if(name ===""){
+            throw new Error(" Name cannot be empty");
+	    }
 		if (age === ""){
 		    throw new Error(" Age cannot be empty");
 		}    
@@ -37,7 +37,7 @@
 	    }
 	    catch(err){
 	    	console.log("Error" + err.message);
-     	    }
+     	}
 	}
 
     </script>
@@ -60,12 +60,12 @@
     <script>
         function handleError() {
             try {
-		let result = x +5;
+				let result = x +5;
                 console.log("Result: " + result);
             } catch (err) {          
                 console.log("An error occurred: " + err.message);
             } finally {
-		console.log("Execution completed.");
+				console.log("Execution completed.");
             }
         }
     </script>

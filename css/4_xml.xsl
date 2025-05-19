@@ -16,7 +16,6 @@
                 font-weight : bold;
                 text-align : center;
             }
-
         </style>
         
         <body>
@@ -39,7 +38,6 @@
             </table>
         </body>
     </html>
-
 
     </xsl:template>
 </xsl:stylesheet>

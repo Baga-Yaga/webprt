@@ -3,7 +3,7 @@
 <body>
 <form method="POST" action="" enctype =multipart/form-data> 
 	Select :<input type="file" name="myfile"></input>
-	<input value="Upload File " type="submit" ></input>
+	<input value="Upload File! " type="submit" ></input>
 
 </form>
 
